@@ -11,7 +11,9 @@ cidr_whitelist: null
 domains_prod:
   - hosts:
       - skoll.ar
-domains_test: test.skoll.ar
+domains_test:
+  - hosts:
+      - test.skoll.ar
 gitlab_url: null
 odoo_dbfilter: "%h.*"
 odoo_initial_lang: es_AR

@@ -22,7 +22,7 @@ services:
       default:
       globalwhitelist_shared:
     labels:
-      doodba.domain.main: ""
+      doodba.domain.main: "test.skoll.ar"
     command:
       - odoo
       - --workers=2
@@ -46,7 +46,7 @@ services:
         aliases:
           - smtplocal
     labels:
-      doodba.domain.main: ""
+      doodba.domain.main: "test.skoll.ar"
     volumes:
       - "smtpconf:/etc/mailhog:ro,z"
     entrypoint: [sh, -c]
