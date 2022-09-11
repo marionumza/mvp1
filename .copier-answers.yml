@@ -15,7 +15,7 @@ domains_test:
   - hosts:
       - test.skoll.ar
 gitlab_url: null
-odoo_dbfilter: "%h.*"
+odoo_dbfilter: ^prod
 odoo_initial_lang: es_AR
 odoo_listdb: true
 odoo_oci_image: docker.io/marionumza/mvp1
