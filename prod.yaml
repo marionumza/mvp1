@@ -18,7 +18,7 @@ services:
     networks:
       default:
     labels:
-      doodba.domain.main: ""
+      doodba.domain.main: "skoll.ar"
 
   db:
     extends:
@@ -35,45 +35,8 @@ services:
       traefik.docker.network: "inverseproxy_shared"
       traefik.tcp.services.mvp1-15-0-prod-database.loadbalancer.server.port: 5432
       traefik.mvp1-15-0-prod-database-0.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-0.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-0.service:
-        mvp1-15-0-prod-database
-      traefik.mvp1-15-0-prod-database-1.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-1.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-1.service:
-        mvp1-15-0-prod-database
-      traefik.mvp1-15-0-prod-database-2.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-2.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-2.service:
-        mvp1-15-0-prod-database
-      traefik.mvp1-15-0-prod-database-3.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-3.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-3.service:
-        mvp1-15-0-prod-database
-      traefik.mvp1-15-0-prod-database-4.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-4.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-4.service:
-        mvp1-15-0-prod-database
-      traefik.mvp1-15-0-prod-database-5.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-5.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-5.service:
-        mvp1-15-0-prod-database
-      traefik.mvp1-15-0-prod-database-6.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-6.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-6.service:
-        mvp1-15-0-prod-database
-      traefik.mvp1-15-0-prod-database-7.port: 5432
-      traefik.tcp.routers.mvp1-15-0-prod-database-7.rule:
-        Host()
-      traefik.tcp.routers.mvp1-15-0-prod-database-7.service:
-        mvp1-15-0-prod-database
+      traefik.tcp.routers.mvp1-15-0-prod-database-0.rule: Host(`skoll.ar`)
+      traefik.tcp.routers.mvp1-15-0-prod-database-0.service: mvp1-15-0-prod-database
 
 networks:
   default:

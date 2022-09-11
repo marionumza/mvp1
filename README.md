@@ -1,7 +1,7 @@
 [![Doodba deployment](https://img.shields.io/badge/deployment-doodba-informational)](https://github.com/Tecnativa/doodba)
 [![Last template update](https://img.shields.io/badge/last%20template%20update-v4.2.0-informational)](https://github.com/Tecnativa/doodba-copier-template/tree/v4.2.0)
 [![Odoo](https://img.shields.io/badge/odoo-v15.0-a3478a)](https://github.com/odoo/odoo/tree/15.0)
-[![Deployment data](https://img.shields.io/badge/%F0%9F%8C%90%20prod--green)](http://)
+[![Deployment data](https://img.shields.io/badge/%F0%9F%8C%90%20prod-skoll.ar-green)](http://skoll.ar)
 [![Deployment data](https://img.shields.io/badge/%E2%9A%92%20demo--yellow)](http://)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://pre-commit.com/)
 
