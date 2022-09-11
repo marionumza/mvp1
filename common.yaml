@@ -11,7 +11,7 @@ services:
         GID: "${GID:-1000}"
     environment:
       EMAIL_FROM: ""
-      PGDATABASE: &dbname skoll.ar
+      PGDATABASE: &dbname prod
       PGUSER: &dbuser "odoo"
       PROXY_MODE: "false"
       LIST_DB: "true"

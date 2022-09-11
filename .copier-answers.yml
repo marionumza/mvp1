@@ -25,7 +25,7 @@ paths_without_crawlers:
   - /web
   - /website/info
 postgres_cidr_whitelist: null
-postgres_dbname: skoll.ar
+postgres_dbname: prod
 postgres_exposed: true
 postgres_exposed_port: 5432
 postgres_username: odoo
